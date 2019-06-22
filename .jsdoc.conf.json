@@ -7,7 +7,7 @@
     },
     "source": {
       "includePattern": ".+\\.js(doc|x)?$",
-      "excludePattern": "node_modules"
+      "excludePattern": "node_modules|dist"
     },
     "sourceType": "module",
     "tags": {
