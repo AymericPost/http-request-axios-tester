@@ -1,0 +1,31 @@
+[
+    {
+        "title": "No test specified '2+2'",
+        "method":"get",
+        "url": "https://api.mathjs.org/v4/?expr=2%2B2"
+    },
+    {
+        "title": "Test should fail : '2+2 > 5'",
+        "method":"get",
+        "url": "https://api.mathjs.org/v4/?expr=2%2B2",
+        "expect": 5,
+        "operator": "gt"
+    },
+    {
+        "title": "Testing POST with body : '2+2 != 5'",
+        "method":"post",
+        "url": "https://api.mathjs.org/v4/",
+        "body": {
+            "expr": "2+2"
+        },
+        "expect": 5,
+        "operator": "ne"
+    },
+    {
+        "title": "PastriesOutofBoundException",
+        "method": "croissant",
+        "url": "https://www.french-pastries.fr",
+        "expect": "pain-au-chocolat",
+        "operator": "chocolatine"
+    }
+]
