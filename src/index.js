@@ -61,7 +61,7 @@ async function asyncForEach(arr, cb) {
  * Axios request test function. Checks if test's parameters are valid, then runs an axios request based on specified http verb and url, then if a test is given, checks response against given expected value and operator. Finally, logs result to stdout/stderr.
  * @function testing
  * @param {Object} test - One of the test details imported from .json file given to this script as parameter.
- * @param {String} test.title - Text to be displayed next to test number log.
+ * @param {String} [test.title] - Text to be displayed next to test number log.
  * @param {String} test.method - HTTP verb to use ("get", "put", "post", "delete" or "patch")
  * @param {String} test.url - URL to make a request on.
  * @param {Object} [test.body] - Request's body.
