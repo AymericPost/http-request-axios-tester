@@ -18,7 +18,7 @@ import axios from "axios";
 /** 
  * @constant {Object[]} params - Imported array of objects from JSON "parameters.json".
  * @property {Object} param - One of the test details imported from .json file given to this script as parameter.
- * @property {String} param.title - Text to be displayed next to test number log.
+ * @property {String} [param.title] - Text to be displayed next to test number log.
  * @property {String} param.method - HTTP verb to use ("get", "put", "post", "delete" or "patch")
  * @property {String} param.url - URL to make a request on.
  * @property {Object} [param.body] - Request's body.
